@@ -49,8 +49,8 @@ body {
 
 /* slider */
 .slider {
-  border: 1px solid transparent;
-  background: hsl(228, 56%, 26%);
+  border: 0.1rem solid transparent;
+  background: hsl(228, 56%, 16%);
   border-radius: 2rem;
   padding: 0.1rem;
 }
@@ -71,4 +71,80 @@ body {
   height: 1.2rem;
   background: #fff;
   border-radius: 100%;
+}
+
+/* Storage */
+.storage {
+  align-items: center;
+  background: hsl(228, 56%, 26%);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 50rem;
+  padding: 3rem;
+  position: relative;
+}
+
+.storage__body {
+  width: 100%;
+}
+
+.storage__used {
+  font-weight: 700;
+  color: #fff;
+}
+
+.storage__range {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.storage__available {
+  --padding-botttom: 3rem;
+  align-items: center;
+  background: #fff;
+  border-radius: 0.8rem;
+  bottom: -2.5rem;
+  color: hsla(229, 7%, 55%, 0.7);
+  display: inline-flex;
+  font-weight: 700;
+  height: 5rem;
+  justify-content: center;
+  letter-spacing: 0.1rem;
+  padding: 3rem 2rem var(--padding-botttom);
+  position: absolute;
+}
+
+.storage__value {
+  font-size: 3.5rem;
+  margin-right: 1rem;
+  color: hsl(229, 57%, 11%);
+}
+
+@media screen and (min-width: 1024px) {
+  .storage {
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .storage__info {
+    align-self: self-start;
+  }
+
+  .storage__available {
+    top: -3rem;
+    right: 5rem;
+    padding-bottom: calc(var(--padding-botttom) + 1.5rem);
+    clip-path: polygon(
+      0 0,
+      100% 0,
+      100% 75%,
+      100% 100%,
+      89% 75%,
+      33% 75%,
+      0 75%
+    );
+  }
 }
