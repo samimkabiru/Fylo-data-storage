@@ -37,6 +37,9 @@ body {
   background: hsl(228, 56%, 26%);
   border-radius: 1.5rem 9rem 1.5rem 1.5rem;
   max-width: 50rem;
+  margin: 0 auto;
+  width: 100%;
+  z-index: 1;
 }
 
 .access__logo {
@@ -45,6 +48,12 @@ body {
 
 .access__body .icon-container:nth-of-type(2) {
   margin: 0 1.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .access {
+    max-width: 100%;
+  }
 }
 
 /* slider */
@@ -82,6 +91,7 @@ body {
   flex-direction: column;
   margin: 0 auto;
   max-width: 50rem;
+  width: 100%;
   padding: 3rem;
   position: relative;
 }
@@ -146,5 +156,59 @@ body {
       33% 75%,
       0 75%
     );
+  }
+}
+
+.container {
+  max-width: 114rem;
+  margin: 0 auto;
+}
+
+/* Data storage block */
+.data-storage {
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+}
+
+.data-storage__access {
+  margin-bottom: 2rem;
+}
+
+.background-mobile {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  height: 100vh;
+}
+
+.background-desktop {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .data-storage {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    align-items: center;
+    column-gap: 2.5rem;
+  }
+
+  .data-storage-container {
+    background: hsl(229, 57%, 11%);
+  }
+
+  .background-mobile {
+    display: none;
+  }
+
+  .background-desktop {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 39rem;
+    bottom: 0;
   }
 }
