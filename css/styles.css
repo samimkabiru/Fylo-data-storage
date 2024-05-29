@@ -30,3 +30,19 @@ body {
   background: hsl(229, 57%, 11%);
   border-radius: 1rem;
 }
+
+/* Access */
+.access {
+  padding: 4rem 3rem;
+  background: hsl(228, 56%, 26%);
+  border-radius: 1.5rem 9rem 1.5rem 1.5rem;
+  max-width: 50rem;
+}
+
+.access__logo {
+  margin-bottom: 2.5rem;
+}
+
+.access__body .icon-container:nth-of-type(2) {
+  margin: 0 1.5rem;
+}
