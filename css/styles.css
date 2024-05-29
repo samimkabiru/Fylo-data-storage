@@ -46,3 +46,29 @@ body {
 .access__body .icon-container:nth-of-type(2) {
   margin: 0 1.5rem;
 }
+
+/* slider */
+.slider {
+  border: 1px solid transparent;
+  background: hsl(228, 56%, 26%);
+  border-radius: 2rem;
+  padding: 0.1rem;
+}
+
+.slider__reading {
+  width: 75%;
+  height: 1.5rem;
+  border-radius: 2rem;
+  background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0.2rem;
+}
+
+.slider__point {
+  width: 1.2rem;
+  height: 1.2rem;
+  background: #fff;
+  border-radius: 100%;
+}
